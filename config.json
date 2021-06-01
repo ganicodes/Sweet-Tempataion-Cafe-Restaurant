@@ -2,9 +2,9 @@
   "parameters":
   {
     "local_server":"True",
-    "gmail-user":"abdulgani.work@gmail.com",
-    "gmail-password":"Dontknow9909",
+    "gmail-user":"mail@mail.com",
+    "gmail-password":"Password",
     "admin_user": "sweet",
-    "admin_password": "admin656"
+    "admin_password": "admin111"
   }
 }

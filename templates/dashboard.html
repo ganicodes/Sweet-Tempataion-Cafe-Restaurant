@@ -1,63 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Admin Section</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>Admin Section</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-<!--   <link href="{{ url_for('static', filename='assets/img/favicon.png')}}" rel="icon">
+    <!-- Favicons -->
+    <!--   <link href="{{ url_for('static', filename='assets/img/favicon.png')}}" rel="icon">
   <link href="{{ url_for('static', filename='assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon"> -->
 
-  <!-- Google Fonts --> 
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Vendor CSS Files -->
-  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='assets/vendor/icofont/icofont.min.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='assets/vendor/animate.css/animate.min.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='assets/vendor/venobox/venobox.css')}}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='assets/vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='assets/vendor/icofont/icofont.min.css')}}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css')}}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='assets/vendor/animate.css/animate.min.css')}}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='assets/vendor/venobox/venobox.css')}}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='assets/vendor/owl.carousel/assets/owl.carousel.min.css')}}"
+      rel="stylesheet"
+    />
 
-  <!-- Template Main CSS File -->
-  <link href="{{ url_for('static', filename='assets/css/style.css')}}" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link
+      href="{{ url_for('static', filename='assets/css/style.css')}}"
+      rel="stylesheet"
+    />
 
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: Delicious - v2.2.0
   * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body>
-
-  <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top ">
-    <div class="container text-right">
-      <i class="icofont-phone"></i>02462 251122
-      <i class="icofont-clock-time icofont-rotate-180"></i> Mon-Sat: 11:00 AM - 11:00 PM
-    </div>
-  </section>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center ">
-    <div class="container d-flex align-items-center">
-
-      <div class="logo mr-auto">
-        <h1 class="text-light"><a ><span>Sweet Temptation</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+  <body>
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+      <div class="container text-right">
+        <i class="icofont-phone"></i>02462 251122
+        <i class="icofont-clock-time icofont-rotate-180"></i> Mon-Sat: 11:00 AM
+        - 11:00 PM
       </div>
+    </section>
 
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <!-- <li class="active"><a href="/">Home</a></li>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center">
+        <div class="logo mr-auto">
+          <h1 class="text-light">
+            <a><span>Sweet Temptation</span></a>
+          </h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <!-- <li class="active"><a href="/">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#specials">Specials</a></li>
@@ -66,136 +90,140 @@
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li> -->
 
-          <li class="book-a-table text-center"><a href="/logout">Log Out</a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
+            <li class="book-a-table text-center">
+              <a href="/logout">Log Out</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
+      </div>
+    </header>
+    <!-- End Header -->
 
-    </div>
-  </header><!-- End Header -->
-
-  <main id="main">
-
-    <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Admin Section</h2>
-          <ol>
-            <li><a href="/">Home</a></li>
-            <li>Admin Section</li>
-          </ol>
+    <main id="main">
+      <!-- ======= Breadcrumbs Section ======= -->
+      <section class="breadcrumbs">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2>Admin Section</h2>
+            <ol>
+              <li><a href="/">Home</a></li>
+              <li>Admin Section</li>
+            </ol>
+          </div>
         </div>
+      </section>
+      <!-- End Breadcrumbs Section -->
 
-      </div>
-    </section><!-- End Breadcrumbs Section -->
+      <!-- Table for booking requests -->
+      <section class="inner-page">
+        <div class="container">
+          <h3>Table Booking Requests</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">S.No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone No.</th>
+                <th scope="col">On Date</th>
+                <th scope="col">At Time</th>
+                <th scope="col">For(people)</th>
+                <th scope="col">Message</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for t in tbookings %}
+              <tr>
+                <th>{{t.sno}}</th>
+                <td>{{t.name}}</td>
+                <td>{{t.email}}</td>
+                <td>{{t.phone_num}}</td>
+                <td>{{t.date}}</td>
+                >
+                <td>{{t.time}}</td>
+                <td>{{t.nopeople}}</td>
+                <td>{{t.msg}}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </section>
 
-    <!-- Table for booking requests -->
-    <section class="inner-page">
+      <!-- Table for contact/complaint request -->
+      <section>
+        <div class="container">
+          <h3>Contact Requests/Complaints</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">S.No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Message</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for c in creq %}
+              <tr>
+                <th>{{c.sno}}</th>
+                <td>{{c.name}}</td>
+                <td>{{c.email}}</td>
+                <td>{{c.subject}}</td>
+                <td>{{c.message}}</td>
+                >
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
       <div class="container">
-        <h3>Table Booking Requests</h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">S.No</th>
-              <th scope="col">Name</th>
-              <th scope="col">Email</th>
-              <th scope="col">Phone No.</th>
-              <th scope="col">On Date</th>
-              <th scope="col">At Time</th>
-              <th scope="col">For(people)</th>
-              <th scope="col">Message</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for t in tbookings %}
-            <tr>
-              <th>{{t.sno}}</th>
-              <td>{{t.name}}</td>
-              <td>{{t.email}}</td>
-              <td>{{t.phone_num}}</td>
-              <td>{{t.date}}</td>>
-              <td>{{t.time}}</td>
-              <td>{{t.nopeople}}</td>
-              <td>{{t.msg}}</td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- Table for contact/complaint request -->
-    <section>
-      <div class="container">
-        <h3>Contact Requests/Complaints</h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">S.No</th>
-              <th scope="col">Name</th>
-              <th scope="col">Email</th>
-              <th scope="col">Subject</th>
-              <th scope="col">Message</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for c in creq %}
-            <tr>
-              <th>{{c.sno}}</th>
-              <td>{{c.name}}</td>
-              <td>{{c.email}}</td>
-              <td>{{c.subject}}</td>
-              <td>{{c.message}}</td>>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Sweet Temptation</h3>
-      <p>"To make your special moments unforgettable"</p>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-<!--         <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <h3>Sweet Temptation</h3>
+        <p>"To make your special moments unforgettable"</p>
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <!--         <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
         <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span> Sweet Temptation</span></strong>. All Rights Reserved
-      </div>
-      <!-- <div class="credits"> -->
+        </div>
+        <div class="copyright">
+          Made by Gani &copy; Copyright
+          <strong><span> Sweet Temptation</span></strong
+          >. All Rights Reserved
+        </div>
+        <!-- <div class="credits"> -->
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
-      <!--   Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <!--   Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div> -->
-    </div>
-  </footer><!-- End Footer -->
+      </div>
+    </footer>
+    <!-- End Footer -->
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="{{ url_for('static', filename='assets/vendor/jquery/jquery.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/jquery-sticky/jquery.sticky.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/venobox/venobox.min.js')}}"></script>
-  <script src="{{ url_for('static', filename='assets/vendor/owl.carousel/owl.carousel.min.js')}}"></script>
+    <!-- Vendor JS Files -->
+    <script src="{{ url_for('static', filename='assets/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/jquery-sticky/jquery.sticky.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/venobox/venobox.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='assets/vendor/owl.carousel/owl.carousel.min.js')}}"></script>
 
-  <!-- Template Main JS File -->
-  <script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
+  </body>
 </html>
